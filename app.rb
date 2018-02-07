@@ -17,5 +17,6 @@ class App < Sinatra::Base
   
   get '/list_puppies' do 
     @puppies = Puppy.all
+    binding.pry
   end 
 end
