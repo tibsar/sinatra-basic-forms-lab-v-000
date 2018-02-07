@@ -16,6 +16,6 @@ class App < Sinatra::Base
   end 
   
   get '/list_puppies' do 
-    @puppies
+    @puppies = Puppy.all
   end 
 end
